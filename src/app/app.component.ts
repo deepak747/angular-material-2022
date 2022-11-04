@@ -13,7 +13,7 @@ export interface Fruit {
 })
 export class AppComponent {
   title = 'angularMatcourse';
-  fruits: Fruit[] = [{name: 'Lemon'}, {name: 'Lime'}, {name: 'Apple'}];
+  fruits: Fruit[] = [{name: ''}];
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
   add(event: MatChipInputEvent): void {
