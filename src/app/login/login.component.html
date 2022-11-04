@@ -1,0 +1,25 @@
+<div class="flex">
+    <div class="m-auto">
+        <mat-card>
+               <mat-card-title>
+                <h1>Login Here</h1>
+               </mat-card-title>
+            <form action="">
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" placeholder="Enter your mail" required>
+                </mat-form-field>
+    
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="Enter your password" required>
+                </mat-form-field>
+    
+                <button color="accent" mat-raised-button  (click)="login()">
+                   <span *ngIf="!isloading"> Login</span>
+                    <mat-spinner diameter="30" *ngIf="isloading"></mat-spinner>
+                </button>
+            </form>
+        </mat-card>
+    </div>
+</div>
